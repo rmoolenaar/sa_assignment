@@ -25,6 +25,7 @@ WORKDIR ${HOME}
 ADD project.tgz /home/ubuntu/
 
 RUN chown -R ubuntu:ubuntu /home/ubuntu/*
+RUN mkdir -p /home/ubuntu/.bsp
 RUN chown -R ubuntu:ubuntu /home/ubuntu/.bsp
 
 RUN useradd --home /jobs --user-group --shell /usr/sbin/nologin --uid 1001 spark

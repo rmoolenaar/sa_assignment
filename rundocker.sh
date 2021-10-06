@@ -1,5 +1,7 @@
 #!/bin/sh
 
+docker system prune
+
 docker run -it \
      --name sparkmaster \
      spark \
