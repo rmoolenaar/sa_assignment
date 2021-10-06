@@ -24,6 +24,7 @@ I do not like the way the queries are terminated using the timeout parameter. Th
 useful in a production environment, as streams are, by default, considered to be run for a very long time.
 ## Running Test
 The code can be tested using scalatest, where $CLASSPATH contains the scalatest Jar:
+
     % sbt package
     % scala -cp $CLASSPATH org.scalatest.run nl.javadb.LoadDataSpec
 
@@ -37,6 +38,7 @@ Next to this, there are several procedures that can be found on the Internet to 
 to build your own Spark cluster. This makes this option for me well suited.
 I assume Kubernetes can do this as well, but for the above mentioned reasons made me choose Docker.
 To build the image and then run it (Docker needs to be running locally):
+
     % ./builddocker.sh
     % ./rundocker.sh
 
